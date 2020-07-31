@@ -1,0 +1,25 @@
+SELECT RU.COD_ROL, RU.COD_USUARIO, PER.NOMBRE, PER.APELLIDO FROM ROL_USUARIO AS RU, PERSONA AS PER, USUARIO AS USU 
+WHERE RU.COD_USUARIO = 1 AND PER.COD_PERSONA = USU.COD_PERSONA;
+
+INSERT INTO USUARIO VALUES (2,1,'gjpichucho','usu123','ACT',NULL,0);
+INSER INTO ROL_USUARIO VALUES ('EST',2,'ACT');
+
+                            <select class="form-control" id="codModulo" name="codModulo" >
+                                <?php   if ($modulos->num_rows > 0) { 
+                                                        while($row1 = $modulos->fetch_assoc()) {
+                                                        ?><option value=<?php echo $row1["COD_MODULO"]?>>
+                                    <?php echo $row1["NOMBRE"]?> </option>
+                                <?php }
+                                                 }
+                                        ?>
+                            </select>
+
+git filter-branch --env-filter \
+    'if [ $GIT_COMMIT = 5e7458b0966033c76153d941eafdf34b1bcb4696]
+     then
+         export GIT_AUTHOR_DATE="Thu Jul 30 22:01:53 2020 -0800"
+         export GIT_COMMITTER_DATE="Thu JUl 30 22:01:52 2020 -0700"
+     fi'
+git">git commit --amend --date="Wed Feb 16 14:00 2011 +0100"
+
+Fuente: https://www.iteramos.com/pregunta/2797/como-se-puede-cambiar-la-fecha-y-hora-de-un-viejo-commit-git
